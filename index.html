@@ -86,8 +86,12 @@
         .paper-item { margin-bottom: 25px; }
         .paper-title { font-size: 1.15rem; font-weight: 600; color: #111; margin-bottom: 4px; }
         .paper-meta { font-size: 0.95rem; color: #555; margin-bottom: 4px; }
-        .presentation-line { font-size: 0.9rem; color: #777; font-style: italic; }
         .jmp-tag { background: #e74c3c; color: white; padding: 2px 6px; font-size: 0.7rem; font-weight: 700; border-radius: 3px; text-transform: uppercase; margin-left: 6px; vertical-align: middle; display: inline-block; }
+        
+        ul.xp-list { padding-left: 20px; margin: 0; }
+        ul.xp-list li { margin-bottom: 8px; font-size: 1rem; }
+        .ref-grid { display: flex; gap: 30px; }
+        .ref-box { font-size: 1rem; line-height: 1.5; }
     </style>
 </head>
 <body>
@@ -103,22 +107,22 @@
         <!-- PROFILE GRID SECTION -->
         <div class="profile-container">
             
-            <!-- Left-Hand Side Column (Photo + LinkedIn Directly Underneath) -->
+            <!-- Left-Hand Side Column -->
             <div class="profile-lhs">
                 <img src="profile.jpg" alt="Wing Lam Cheung">
                 <div class="lhs-social-box">
                     <strong>LinkedIn:</strong> <br>
-                    <a href="https://linkedin.com" target="_blank">in/winglam.cheung</a>
+                    <a href="https://linkedin.com/in/winglam.cheung" target="_blank">linkedin.com/in/winglamcheung</a>
                 </div>
             </div>
             
-            <!-- Right-Hand Side Column (Bio Text + All 3 Contact Lines Next To Photo) -->
+            <!-- Right-Hand Side Column -->
             <div class="profile-text-box">
                 <h2>Welcome!</h2>
                 <p>I study puzzles in nonbank financial intermediation and their implications for the real economy and household behavior. Utilizing structural models and granular institutional or household data, I examine how capital flows and risk management strategies across intermediaries—including mutual funds, nonbank lenders, and insurers—shape financial fragility and wealth allocation. </p>
                 <p><strong>Research Interests:</strong> Nonbank Intermediation, Macro Finance, Household Finance.</p>
                 
-                <!-- Structured Institutional Email Rows (Positioned right of photo) -->
+                <!-- Structured Institutional Email Rows -->
                 <div class="contact-block">
                     <div class="contact-line"><strong>Main:</strong> winglam.cheung@unil.ch <span class="divider">|</span> Department of Finance, HEC Lausanne</div>
                     <div class="contact-line"><strong>Visiting:</strong> winglam.cheung@marshall.usc.edu <span class="divider">|</span> Department of Finance, USC Marshall</div>
@@ -128,7 +132,7 @@
             
         </div>
 
-        <!-- RESEARCH SECTION -->
+        <!-- RESEARCH SECTION (Clean List - Presentations Hidden) -->
         <section id="research">
             <h2>Research</h2>
             
@@ -136,30 +140,61 @@
             <div class="paper-item">
                 <div class="paper-title">Fund Pre-Positioning and Derivative-Induced Fragility <span class="jmp-tag">Job Market Paper</span></div>
                 <div class="paper-meta">Sole Author</div>
-                <div class="presentation-line">Presented at: PLACEHOLDER_CONFERENCE_1</div>
             </div>
 
             <!-- PAPER 2 -->
             <div class="paper-item">
                 <div class="paper-title">Reconciling the Insurance-Wealth Puzzle: Evidence from Chinese Households</div>
                 <div class="paper-meta">With Jing Xian (University of Geneva)</div>
-                <div class="presentation-line">Presented at: PLACEHOLDER_CONFERENCE_2 (* presented by coauthors)</div>
             </div>
 
             <!-- PAPER 3 -->
             <div class="paper-item">
                 <div class="paper-title">Fast Flow in Slow-Moving Market: Leveraged Loan Fund Flow and Real Activity</div>
                 <div class="paper-meta">Sole Author</div>
-                <div class="presentation-line">Presented at: PLACEHOLDER_CONFERENCE_3</div>
             </div>
 
             <!-- PAPER 4 -->
             <div class="paper-item">
                 <div class="paper-title">Nonbank Corporate Loans and Bank Contingent Credits</div>
-                <div class="paper-meta">With Giedrius Stalenis (University of St. Gallen)</div>
-                <div class="presentation-line">Presented at: PLACEHOLDER_CONFERENCE_4 (* presented by coauthors)</div>
+                <div class="paper-meta">With Giedrius Stalenis</div>
             </div>
         </section>
+
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <ul class="xp-list">
+                <li><strong>Assistant Manager</strong>, Hong Kong Monetary Authority (HKMA), 2019–2021</li>
+                <li><strong>Analyst</strong>, Bank of America Merrill Lynch (Hong Kong & Australia), 2015–2018</li>
+            </ul>
+        </section>
+
+        <!-- TEACHING -->
+        <section id="teaching">
+            <h2>Teaching</h2>
+            <ul class="xp-list">
+                <li><strong>Teaching Affiliate</strong>, IMD Business School</li>
+            </ul>
+        </section>
+
+        <!-- REFERENCES -->
+        <section id="references">
+            <h2>References</h2>
+            <div class="ref-grid">
+                <div class="ref-box">
+                    <strong>Prof. Norman Schürhoff</strong><br>
+                    University of Lausanne & SFI<br>
+                    <a href="mailto:norman.schuerhoff@unil.ch">norman.schuerhoff@unil.ch</a>
+                </div>
+                <div class="ref-box">
+                    <strong>Prof. Lorenzo Bretscher</strong><br>
+                    University of Lausanne & SFI<br>
+                    <a href="mailto:lorenzo.bretscher@unil.ch">lorenzo.bretscher@unil.ch</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 </body>
