@@ -34,12 +34,16 @@
             display: flex;
             gap: 40px;
             align-items: flex-start;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
-        .profile-photo-box {
+        
+        /* LHS Column Setup */
+        .profile-lhs {
             flex: 0 0 220px;
+            display: flex;
+            flex-direction: column;
         }
-        .profile-photo-box img {
+        .profile-lhs img {
             width: 100%;
             height: auto;
             aspect-ratio: 616 / 750;
@@ -48,11 +52,26 @@
             border: 1px solid #e1e4e6;
             background-color: #f8f9fa;
         }
+        .lhs-social-box {
+            margin-top: 15px;
+            padding-top: 10px;
+            font-size: 0.95rem;
+        }
+        .lhs-social-box a {
+            color: #0077b5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .lhs-social-box a:hover {
+            text-decoration: underline;
+        }
+        
+        /* RHS Column Setup */
         .profile-text-box {
             flex: 1;
         }
         
-        /* Contact Block Styling */
+        /* Contact Block Placement Style */
         .contact-block {
             margin-top: 25px;
             padding-top: 15px;
@@ -62,18 +81,6 @@
             font-size: 0.95rem;
             margin-bottom: 6px;
             color: #444;
-        }
-        .linkedin-line {
-            margin-top: 12px;
-            font-size: 0.95rem;
-        }
-        .linkedin-line a {
-            color: #0077b5;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .linkedin-line a:hover {
-            text-decoration: underline;
         }
 
         .paper-item { margin-bottom: 25px; }
@@ -95,28 +102,30 @@
     <main>
         <!-- PROFILE GRID SECTION -->
         <div class="profile-container">
-            <!-- Left-Hand Side Photo Box -->
-            <div class="profile-photo-box">
+            
+            <!-- Left-Hand Side Column (Photo + LinkedIn Directly Underneath) -->
+            <div class="profile-lhs">
                 <img src="profile.jpg" alt="Wing Lam Cheung">
+                <div class="lhs-social-box">
+                    <strong>LinkedIn:</strong> <br>
+                    <a href="https://linkedin.com" target="_blank">in/winglam.cheung</a>
+                </div>
             </div>
             
-            <!-- Right-Hand Side Content -->
+            <!-- Right-Hand Side Column (Bio Text + All 3 Contact Lines Next To Photo) -->
             <div class="profile-text-box">
                 <h2>Welcome!</h2>
                 <p>I study puzzles in nonbank financial intermediation and their implications for the real economy and household behavior. Utilizing structural models and granular institutional or household data, I examine how capital flows and risk management strategies across intermediaries—including mutual funds, nonbank lenders, and insurers—shape financial fragility and wealth allocation. </p>
                 <p><strong>Research Interests:</strong> Nonbank Intermediation, Macro Finance, Household Finance.</p>
                 
-                <!-- Structured Contact Block -->
+                <!-- Structured Institutional Email Rows (Positioned right of photo) -->
                 <div class="contact-block">
                     <div class="contact-line"><strong>Main:</strong> winglam.cheung@unil.ch <span class="divider">|</span> Department of Finance, HEC Lausanne</div>
                     <div class="contact-line"><strong>Visiting:</strong> winglam.cheung@marshall.usc.edu <span class="divider">|</span> Department of Finance, USC Marshall</div>
                     <div class="contact-line"><strong>Work:</strong> winglam.cheung@affiliate.imd.org <span class="divider">|</span> IMD Business School (Affiliate)</div>
-                    
-                    <div class="linkedin-line">
-                        <strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank">://linkedin.com</a>
-                    </div>
                 </div>
             </div>
+            
         </div>
 
         <!-- RESEARCH SECTION -->
