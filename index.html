@@ -16,23 +16,51 @@
         }
         header { 
             border-bottom: 1px solid #eaeaea; 
-            padding-bottom: 25px; 
+            padding-bottom: 20px; 
             margin-bottom: 35px; 
         }
         h1 { font-size: 2.4rem; color: #111; margin-bottom: 8px; font-weight: 700; }
+        h2 { font-size: 1.3rem; color: #2c3e50; margin-top: 40px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
         .subtitle-line { 
             font-size: 1.05rem; 
             color: #444; 
-            margin-bottom: 12px; 
+            margin-bottom: 5px; 
             font-weight: 500;
-        }
-        .contact-line { 
-            font-size: 0.95rem; 
-            color: #666; 
         }
         .divider { 
             color: #ccc; 
             margin: 0 10px; 
+        }
+        .paper-item { 
+            margin-bottom: 25px; 
+        }
+        .paper-title { 
+            font-size: 1.15rem; 
+            font-weight: 600; 
+            color: #111;
+            margin-bottom: 4px;
+        }
+        .paper-meta { 
+            font-size: 0.95rem; 
+            color: #555; 
+            margin-bottom: 4px;
+        }
+        .presentation-line { 
+            font-size: 0.9rem; 
+            color: #777; 
+            font-style: italic; 
+        }
+        .jmp-tag { 
+            background: #e74c3c; 
+            color: white; 
+            padding: 2px 6px; 
+            font-size: 0.7rem; 
+            font-weight: 700; 
+            border-radius: 3px; 
+            text-transform: uppercase; 
+            margin-left: 6px; 
+            vertical-align: middle; 
+            display: inline-block; 
         }
     </style>
 </head>
@@ -41,14 +69,58 @@
     <header>
         <h1>Wing Lam Cheung</h1>
         <div class="subtitle-line">
-            PhD Candidate in Finance<span class="divider">|</span>HEC Lausanne & Swiss Finance Institute<span class="divider">|</span>Visiting Scholar<span class="divider">|</span>USC Marshall
-        </div>
-        <div class="contact-line">
-            <strong>Email:</strong> winglam.cheung@unil.ch 
-            <span class="divider">|</span> 
-            <strong>Office:</strong> University of Southern California (Visiting Office)
+            PhD Candidate in Finance at HEC Lausanne & Swiss Finance Institute<span class="divider">|</span>Visiting Scholar at USC Marshall
         </div>
     </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I study puzzles in nonbank financial intermediation and their implications for the real economy and household behavior. Utilizing structural models and granular institutional or household data, I examine how capital flows and risk management strategies across intermediaries—including mutual funds, nonbank lenders, and insurers—shape financial fragility and wealth allocation. My research pipeline spans from explaining the derivative usage of mutual funds to household insurance demand to evaluate their broader impacts on market stability and aggregate economic activity.</p>
+            <p><strong>Research Interests:</strong> Nonbank Financial Intermediation, Macro Finance, Household Finance.</p>
+        </section>
+
+        <section id="research">
+            <h2>Research</h2>
+            
+            <!-- PAPER 1 (JMP) -->
+            <div class="paper-item">
+                <div class="paper-title">Fund Pre-Positioning and Derivative-Induced Fragility <span class="jmp-tag">Job Market Paper</span></div>
+                <div class="paper-meta">Sole Author</div>
+                <div class="presentation-line">Presented at: PLACEHOLDER_CONFERENCE_1</div>
+            </div>
+
+            <!-- PAPER 2 -->
+            <div class="paper-item">
+                <div class="paper-title">Reconciling the Insurance-Wealth Puzzle: Evidence from Chinese Households</div>
+                <div class="paper-meta">With Jing Xian (University of Geneva)</div>
+                <div class="presentation-line">Presented by coauthor at: PLACEHOLDER_CONFERENCE_2</div>
+            </div>
+
+            <!-- PAPER 3 -->
+            <div class="paper-item">
+                <div class="paper-title">Fast Flow in Slow-Moving Market: Leveraged Loan Fund Flow and Real Activity</div>
+                <div class="paper-meta">Sole Author</div>
+                <div class="presentation-line">Presented at: PLACEHOLDER_CONFERENCE_3</div>
+            </div>
+
+            <!-- PAPER 4 -->
+            <div class="paper-item">
+                <div class="paper-title">Nonbank Corporate Loans and Bank Contingent Credits</div>
+                <div class="paper-meta">With Giedrius Stalenis</div>
+                <div class="presentation-line">Presented by coauthor at: PLACEHOLDER_CONFERENCE_4</div>
+            </div>
+        </section>
+
+        <!-- NEW CONTACT SECTION AT THE BOTTOM -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                <strong>Email:</strong> winglam.cheung@unil.ch <br>
+                <strong>Office:</strong> University of Southern California (Visiting Office)
+            </p>
+        </section>
+    </main>
 
 </body>
 </html>
